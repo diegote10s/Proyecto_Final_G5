@@ -1,10 +1,22 @@
-/* BOX-SIZING */
+/* **********BOX-SIZING********* */
 .selector-for-some-widget {
   box-sizing: content-box;
 }
+/* **********TIPOGRAFIA******** */
+
+/* **********VARIABLES******** */
+:root {
+  --uno-color: #364586;
+  --dos-color: #567ad0;
+  --tres-color: #465fab;
+  --cuatro-color: #567ad0;
+  --fondo-color: #fcfcfc;
+}
+
+/* ***************************** */
 
 body {
-  background-color: #567ad0;
+  background-color: var(--fondo-color);
   font-size: 24px;
 }
 
@@ -31,4 +43,28 @@ body {
 
 .carousel-item {
   height: 100%;
+}
+
+/* Cotización */
+.cotizar {
+}
+
+.text {
+  font-size: 54px;
+  color: var(--uno-color);
+}
+
+.textParrafo {
+  font-size: 32px;
+  color: var(--dos-color);
+}
+
+.botonComenzar {
+  background-color: var(--uno-color);
+  color: var(--fondo-color);
+  border-color: var(--fondo-color);
+}
+
+.persona_celular {
+  width: 100%;
 }
