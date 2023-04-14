@@ -69,45 +69,27 @@ body {
   color: #567ad0;
 }
 
-/* ENSAYO */
-
-.ensayo > h2,
-h3 {
-  color: var(--uno-color);
+/* COTIZACION */
+.cotizacion {
+  background-image: url(../imgs/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-.lineaHr {
-  border: medium solid #465fab;
-  border-radius: 10px;
-  margin: 0 200px 0 200px;
+.formularios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-left: 20px;
 }
 
-/* Nuestro Equipo */
-
-.nuestroEquipo {
-  color: var(--uno-color);
-  margin-top: 50px;
-  margin-bottom: 80px;
+.form-group {
+  width: 30%;
+  margin: 20px 20px 20px 20px;
 }
 
-/* CARD */
-.card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-}
-
-.card-title {
-  font-size: 1.5rem;
-}
-
-.card-text {
-  font-size: 1.2rem;
-  color: #555;
+.form-control {
+  border: 1px solid black;
 }
