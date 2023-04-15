@@ -32,7 +32,8 @@
 
     <!-- CSS -->
     <link href="style.css" rel="stylesheet" />
-
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="container-fluid background sticky-top">
@@ -201,7 +202,9 @@
                   });
               </script>
               <li class="nav-item ms-5">
-                <a class="nav-link colorEnlace" href="cotizacion.html">Cotizar</a>
+                <a class="nav-link colorEnlace" href="cotizacion.html "
+                  >Cotizar</a
+                >
               </li>
             </ul>
           </div>
@@ -286,8 +289,9 @@
         src="imgs/icono.png"
         alt="icono"
         class="img-fluid imagenParrafo col"
+        data-aos="fade-right"
       />
-      <p class="ensayoParrafo justify-content-center col">
+      <p class="ensayoParrafo justify-content-center col" data-aos="fade-left">
         <i>
           "AseguraCar es una excelente opción para proteger su automóvil y su
           seguridad en las carreteras. Con amplia experiencia en el mercado y un
@@ -300,27 +304,30 @@
     </div>
     <!-- Cotizar -->
     <div class="card bg-dark cotizar">
-      <img
-        src="imgs/persona_celular.jpg"
-        class="persona_celular"
-        alt="persona_celular"
-      />
       <div
         class="card-img-overlay container-xxl text-center align-center textoCotizar d-flex flex-column justify-content-center align-items-center"
       >
         <h3 class="card-title text">COTIZACIÓN ONLINE</h3>
         <p class="card-text textParrafo">Obtene tu cotización ahora</p>
-        <button class="botonComenzar shadow-sm p-3 mb-5 rounded">
+        <button
+          class="botonComenzar shadow-sm p-3 mb-5 rounded"
+          data-aos="zoom-out"
+        >
           COMENZAR
         </button>
       </div>
     </div>
     <!-- telefono -->
     <div class="telefono">
-      <h1><i class="bi bi-telephone-fill"></i> 0800-333-4444</h1>
+      <h3><i class="bi bi-telephone-fill"></i> 0800-333-4444</h3>
     </div>
+    <!-- API GOOGLE MAPS -->
+    <h3 class="container-xxl dondeEncontrarnos text-center">Donde Encontrarnos</h3>
+    <div id="map" class="container-xxl"></div>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
     <!-- Presentacion de la APP -->
-    <div class="card bg-dark presentacionApp border">
+    <div class="card presentacionApp">
       <img src="imgs/celuAPP.png" class="card-img celuApp" alt="..." />
       <div class="card-img-overlay textoApp">
         <h5 class="card-title textoAppTitulo">Nuestra APP</h5>
@@ -345,6 +352,13 @@
     ></script>
     <!-- Java Script -->
     <script src="main.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </body>
 </html>

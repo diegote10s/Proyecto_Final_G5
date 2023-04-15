@@ -92,15 +92,22 @@ body {
   font-size: 24px;
 }
 /* Cotización */
+.cotizar {
+  background-image: url(imgs/persona_celular.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  background-attachment: fixed;
+}
 
 .text {
-  font-size: 54px;
+  font-size: 36px;
   color: var(--fondo-color);
   /* margin-bottom: 10px; */
 }
 
 .textParrafo {
-  font-size: 32px;
+  font-size: 22px;
   color: var(--fondo-color);
 }
 
@@ -108,18 +115,21 @@ body {
   background-color: var(--uno-color);
   color: var(--fondo-color);
   border: none;
+  width: 300px;
+  margin-top: 30px;
   border-radius: 4px;
   padding: 12px 24px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 26px;
-  margin: 4px 2px;
+  font-size: 18px;
+  /* margin: 4px 32px; */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 .botonComenzar:hover {
-  background-color: var(--tres-color);
+  background-color: black;
+  opacity: 0.5;
 }
 
 .persona_celular {
@@ -136,6 +146,19 @@ body {
   text-align: center;
 }
 
+/* API GOOGLE MAPS */
+
+#map {
+  height: 500px;
+
+  margin: auto;
+}
+
+.dondeEncontrarnos {
+  margin-top: 100px;
+  background-color: var(--uno-color);
+  color: var(--fondo-color);
+}
 /* presentacion App */
 
 .presentacionApp {
@@ -210,10 +233,6 @@ body {
   color: #ffffff;
   font-family: inherit;
   font-weight: 500;
-}
-
-button:hover {
-  animation: shake3856 0.3s linear infinite both;
 }
 
 @keyframes shake3856 {

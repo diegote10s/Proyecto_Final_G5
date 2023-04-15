@@ -71,22 +71,28 @@ body {
 
 /* ENSAYO */
 
+.tituloNuestro {
+  background-color: var(--uno-color);
+  color: var(--fondo-color) !important;
+  padding: 8px;
+  margin-top: 50px;
+}
+
 .ensayo > h2,
 h3 {
   color: var(--uno-color);
 }
 
-.lineaHr {
-  border: medium solid #465fab;
-  border-radius: 10px;
-  margin: 0 200px 0 200px;
+.ensayo > p,
+.ensayo ul {
+  font-size: 14px;
+  line-height: 40px;
 }
-
 /* Nuestro Equipo */
 
 .nuestroEquipo {
   color: var(--uno-color);
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 80px;
 }
 
@@ -98,9 +104,11 @@ h3 {
 }
 
 .card-img-top {
-  height: 200px;
-  object-fit: cover;
+  height: auto;
+  /* object-fit: cover; */
   border-radius: 10px 10px 0 0;
+  width: 150px;
+  margin: auto;
 }
 
 .card-title {
@@ -110,4 +118,9 @@ h3 {
 .card-text {
   font-size: 1.2rem;
   color: #555;
+}
+
+.tarjeta {
+  width: 250px;
+  margin: auto;
 }
