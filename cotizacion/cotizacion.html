@@ -16,7 +16,7 @@
     <!-- CSS -->
     <link href="cotizacion.css" rel="stylesheet" />
   </head>
-  <body class="cotizacion">
+  <body>
     <header class="container-fluid background sticky-top">
       <!-- Redes Inicio -->
       <div
@@ -60,7 +60,7 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary contenedor">
         <div class="container-xxl">
           <a class="navbar-brand" href="index.html"
-            ><img src="imgs/logo.png" alt="logo" class="logo"
+            ><img src="..//imgs/logo.png" alt="logo" class="logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -79,12 +79,12 @@
                 <a
                   class="nav-link colorEnlace"
                   aria-current="page"
-                  href="index.html"
+                  href="../index.html"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item ms-5">
-                <a class="nav-link colorEnlace" href="nosotros.html"
+                <a class="nav-link colorEnlace" href="../nosotros.html"
                   >Nosotros</a
                 >
               </li>
@@ -248,6 +248,7 @@
         <!-- Pais -->
         <label for="pais" class="control-label">Pais</label>
         <select class="form-control" id="pais">
+          <option value="" selected disabled>Seleccionar país</option>
           <option value="AF">Afganistán</option>
           <option value="AL">Albania</option>
           <option value="DE">Alemania</option>
@@ -312,7 +313,7 @@
           <option value="AE">Emiratos Árabes Unidos</option>
           <option value="ER">Eritrea</option>
           <option value="SI">Eslovenia</option>
-          <option value="ES" selected>España</option>
+          <option value="ES">España</option>
           <option value="US">Estados Unidos</option>
           <option value="EE">Estonia</option>
           <option value="ET">Etiopía</option>
@@ -340,21 +341,58 @@
       </div>
 
       <div class="form-group">
-        <!-- -->
-        <label for="zip_id" class="control-label">Zip Code</label>
+        <!--Codigo Postal-->
+        <label for="codigoPostal" class="control-label">Codigo Postal</label>
         <input
           type="text"
           class="form-control"
-          id="zip_id"
-          name="zip"
-          placeholder="#####"
+          id="postal"
+          name="postal"
+          placeholder="ej: 1000"
+          maxlength="4"
+          pattern="[0-9]{1,4}"
         />
       </div>
 
-      <div class="form-group">
-        <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary">Cotizar</button>
+
+      <div class="cotizacion-container">
+
+        <div class="select-options">
+          <label for="marca" class="control-label">Marca</label>
+          <select name="marca" id="marca" class="form-control">
+            <option value="" selected disabled>Seleccionar opción...</option>
+            <option value="ford">Ford</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="honda">Honda</option>
+            <option value="toyota">Toyota</option>
+            <option value="volkswagen">Volkswagen</option>
+          </select>      
+        </div>
+  
+        <div class="select-options">
+          <label for="modelo" class="control-label">Modelo</label>
+          <select name="modelo" id="modelo" class="form-control" disabled>
+            <option value="" selected disabled>Seleccionar opción...</option>
+  
+          </select>
+        </div>
+        
+        <div class="final-price">
+
+          <h2 id="price"></h2>    
+
+        </div>
+
+
+        <div class="form-group">
+          <!-- Submit Button -->
+          <button type="button" class="btn btn-primary" onclick="cotizar()">Cotizar</button>
+        </div>
+
       </div>
     </form>
+
+
   </body>
+  <script type="text/javascript" src="cotizacion.js" defer></script>
 </html>

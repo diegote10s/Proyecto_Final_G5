@@ -71,13 +71,14 @@ body {
 
 /* COTIZACION */
 .cotizacion {
+  
+}
+
+.formularios {
   background-image: url(../imgs/logo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-}
-
-.formularios {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -92,4 +93,38 @@ body {
 
 .form-control {
   border: 1px solid black;
+}
+
+.cotizacion-container {
+  margin: 20px;
+  
+  width: 100vw;  
+}
+
+.select-options {
+  width: 20%;
+  margin-bottom: 40px;
+}
+
+#price {
+    display: none;
+    padding: 10px;
+    background-color: #567ad0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: fit-content;
+  
+}
+
+
+.btn {
+  background-color: #364586;
+}
+
+.final-price {
+  display: flex;
+  flex-direction: row;
 }

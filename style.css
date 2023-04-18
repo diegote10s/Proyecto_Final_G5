@@ -95,10 +95,12 @@ body {
 .tarjeta1 {
   text-align: end;
   font-size: 24px;
+  height: 100%;
 }
 
 .tarjeta1texto {
   width: 70%;
+  mar;
 }
 
 .conocer-mas {
@@ -339,4 +341,29 @@ body {
     -webkit-transform: translate(0);
     transform: translate(0);
   }
+}
+
+.clientes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columna {
+  flex: 1;
+  padding: 10px;
+}
+
+.cliente {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.cliente h3 {
+  margin-top: 0;
+}
+
+.cliente p {
+  margin-bottom: 0;
 }
