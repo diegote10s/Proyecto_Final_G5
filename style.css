@@ -342,6 +342,8 @@ body {
   }
 }
 
+/* API HOLDER */
+
 .clientes {
   display: flex;
   flex-wrap: wrap;
@@ -361,8 +363,12 @@ body {
 
 .cliente h3 {
   margin-top: 0;
+  font-size: 1.2em;
+  color: #567ad0;
 }
 
 .cliente p {
   margin-bottom: 0;
+  font-size: 0.9em;
+  color: #666;
 }
