@@ -370,6 +370,34 @@
         </div>
       </div>
     </div>
+    <!-- API HOLDER -->
+    <h3 class="container-xxl dondeEncontrarnos text-center">Nuestros Asesores</h3>
+    <div class="clientes">
+      <div class="columna"></div>
+      <div class="columna"></div>
+      <div class="columna"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+       const clientesContainer = document.querySelector(".clientes");
+            fetch("https://jsonplaceholder.typicode.com/users")
+            .then(response => response.json())
+            .then(data => {
+             const clientes = data.slice(0, 9);
+      clientes.forEach((cliente, index) => {
+      const columna = clientesContainer.children[index % 3];
+      const clienteElement = document.createElement("div");
+      clienteElement.classList.add("cliente");
+      clienteElement.innerHTML = `
+        <h3>${cliente.name}</h3>
+        <p>${cliente.email}</p>
+        <p>${cliente.phone}</p>
+        <p>${cliente.company.name}</p>
+      `;
+      columna.appendChild(clienteElement);
+    });
+  });
+    </script>
     <!-- FOOTERS -->
    <footer class="bgFotter p-3">
       <div class="container text-center">
