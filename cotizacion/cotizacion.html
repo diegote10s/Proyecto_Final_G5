@@ -354,9 +354,7 @@
         />
       </div>
 
-
       <div class="cotizacion-container">
-
         <div class="select-options">
           <label for="marca" class="control-label">Marca</label>
           <select name="marca" id="marca" class="form-control">
@@ -366,33 +364,70 @@
             <option value="honda">Honda</option>
             <option value="toyota">Toyota</option>
             <option value="volkswagen">Volkswagen</option>
-          </select>      
+          </select>
         </div>
-  
+
         <div class="select-options">
           <label for="modelo" class="control-label">Modelo</label>
           <select name="modelo" id="modelo" class="form-control" disabled>
             <option value="" selected disabled>Seleccionar opción...</option>
-  
           </select>
         </div>
-        
+
         <div class="final-price">
-
-          <h2 id="price"></h2>    
-
+          <h2 id="price"></h2>
         </div>
-
 
         <div class="form-group">
           <!-- Submit Button -->
-          <button type="button" class="btn btn-primary" onclick="cotizar()">Cotizar</button>
+          <button type="button" class="btn btn-primary" onclick="cotizar()">
+            Cotizar
+          </button>
         </div>
-
       </div>
     </form>
 
+    <!-- FOOTERS -->
+    <footer class="bgFotter p-3">
+      <div class="container text-center">
+        <nav class="d-flex justify-content-evenly navFotter py-3 border-bottom">
+          <a href="https://facebook.com" target="_blank"
+            ><i class="bi bi-facebook fs-3"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="bi bi-twitter fs-3"></i
+          ></a>
 
+          <a href="https://youtube.com" target="_blank"
+            ><i class="bi bi-youtube fs-3"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank"
+            ><i class="bi bi-instagram fs-3"></i
+          ></a>
+          <a href="https://api.whatsapp.com" target="_blank"
+            ><i class="bi bi-whatsapp fs-3"></i
+          ></a>
+        </nav>
+        <nav class="container d-flex justify-content-between">
+          <div class="text-start">
+            <img src="imgs/icono.ico" alt="icono" class="iconoFooter" />
+          </div>
+          <div
+            class="d-flex text-white justify-content-center align-items-center"
+          >
+            <a href="index.html#index" class="mx-3 text-decoration-none"
+              >Inicio</a
+            >
+            <a class="mx-3 text-decoration-none">Nosotros</a>
+            <a class="mx-3 text-decoration-none">Contacto</a>
+            <a class="mx-3 text-decoration-none">Cotizar</a>
+          </div>
+        </nav>
+        <small class="text-white">
+          &copy; T.P. Integrador - Grupo 5 - v1.0.0
+        </small>
+      </div>
+    </footer>
   </body>
   <script type="text/javascript" src="cotizacion.js" defer></script>
 </html>
