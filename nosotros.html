@@ -107,9 +107,68 @@
                   >Nosotros</a
                 >
               </li>
-              <li class="nav-item ms-5">
-                <a class="nav-link colorEnlace" href="#">Contacto</a>
-              </li>
+            </li>
+            <li class="nav-item ms-5">
+              <a
+                class="nav-link colorEnlace"
+                href="#"
+                id="contacto-link"
+                target="_self"
+                >Contacto</a>
+              <div id="contacto-form" style="display: none">
+                <form
+                  action=""
+                  method="POST"
+                  onsubmit="return validarFormulario()"
+                >
+                  <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      name="nombre"
+                      placeholder="Ingrese Nombre"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="telefono"
+                      name="telefono"
+                      placeholder="Ingrese Teléfono"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Ingrese Email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea
+                      class="form-control"
+                      id="mensaje"
+                      name="mensaje"
+                      placeholder="Dejenos su consulta"
+                      required
+                    ></textarea>
+                  </div>
+                  <button class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+            <script src="formulario-contacto.js"></script>
+            </li>
               <li class="nav-item ms-5">
                 <a class="nav-link colorEnlace" href="#">Cotizar</a>
               </li>
