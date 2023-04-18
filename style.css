@@ -75,6 +75,17 @@ body {
   border: 2px solid #567ad0 !important;
 }
 
+.tarjeta0texto {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  background-color: rgba(103, 37, 255, 0.5);
+  height: 150px;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+}
+
 .tarjeta1 {
   text-align: end;
   font-size: 24px;
@@ -117,6 +128,7 @@ body {
   border-radius: 20px;
 }
 .imgWilli {
+  min-width: 100px;
   width: 200px;
 }
 .textdesarrollo {
@@ -151,8 +163,8 @@ body {
 }
 
 .conocer-mas:hover {
-  background-color: #0069d9; /* Cambiar el color de fondo al pasar el mouse por encima */
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Agregar una sombra más grande al pasar el mouse por encima */
+  background-color: #0069d9;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 /* Cotización */
 .cotizar {
@@ -166,7 +178,6 @@ body {
 .text {
   font-size: 36px;
   color: var(--fondo-color);
-  /* margin-bottom: 10px; */
 }
 
 .textParrafo {
