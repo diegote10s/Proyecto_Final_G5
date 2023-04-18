@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cotizacion</title>
+    <link rel="icon" href="../imgs/icono.ico" />
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
@@ -12,6 +13,24 @@
       integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
       crossorigin="anonymous"
     />
+    <!-- Iconos de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- CSS -->
     <link href="cotizacion.css" rel="stylesheet" />
@@ -51,16 +70,23 @@
           </li>
         </ul>
         <ul class="list-group list-group-horizontal list-unstyled ms-auto">
-          <li class="colorIcono">0800-333-4444</li>
+          <a
+            href="tel:+540800333444"
+            target="_blank"
+            class="text-decoration-none"
+            ><li class="colorIcono">0800-333-4444</li></a
+          >
           <li class="ms-5">|</li>
-          <li class="ms-5 colorIcono"><i class="bi bi-geo-alt"></i></li>
+          <a href="../index.html#donde-encontrarnos"
+            ><li class="ms-5 colorIcono"><i class="bi bi-geo-alt"></i></li
+          ></a>
         </ul>
       </div>
       <!-- NAV -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary contenedor">
         <div class="container-xxl">
-          <a class="navbar-brand" href="index.html"
-            ><img src="..//imgs/logo.png" alt="logo" class="logo"
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../imgs/icono.ico" alt="logo" class="logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -84,7 +110,7 @@
                 >
               </li>
               <li class="nav-item ms-5">
-                <a class="nav-link colorEnlace" href="../nosotros.html"
+                <a class="nav-link colorEnlace" href="../nosotros/nosotros.html"
                   >Nosotros</a
                 >
               </li>
@@ -94,7 +120,8 @@
                   href="#"
                   id="contacto-link"
                   target="_self"
-                  >Contacto</a>
+                  >Contacto</a
+                >
                 <div id="contacto-form" style="display: none">
                   <form
                     action=""
@@ -147,12 +174,10 @@
                     <button class="btn btn-primary">Enviar</button>
                   </form>
                 </div>
-              <script src="formulario-contacto.js"></script>
+                <script src="../formulario-contacto.js"></script>
               </li>
               <li class="nav-item ms-5">
-                <a class="nav-link colorEnlace" href="cotizacion.html"
-                  >Cotizar</a
-                >
+                <a class="nav-link colorEnlace" href="#">Cotizar</a>
               </li>
             </ul>
           </div>
@@ -321,9 +346,7 @@
         />
       </div>
 
-
       <div class="cotizacion-container">
-
         <div class="select-options">
           <label for="marca" class="control-label">Marca</label>
           <select name="marca" id="marca" class="form-control">
@@ -333,33 +356,71 @@
             <option value="honda">Honda</option>
             <option value="toyota">Toyota</option>
             <option value="volkswagen">Volkswagen</option>
-          </select>      
+          </select>
         </div>
-  
+
         <div class="select-options">
           <label for="modelo" class="control-label">Modelo</label>
           <select name="modelo" id="modelo" class="form-control" disabled>
             <option value="" selected disabled>Seleccionar opción...</option>
-  
           </select>
         </div>
-        
+
         <div class="final-price">
-
-          <h2 id="price"></h2>    
-
+          <h2 id="price"></h2>
         </div>
-
 
         <div class="form-group">
           <!-- Submit Button -->
-          <button type="button" class="btn btn-primary" onclick="cotizar()">Cotizar</button>
+          <button type="button" class="btn btn-primary" onclick="cotizar()">
+            Cotizar
+          </button>
         </div>
-
       </div>
     </form>
+    <!-- FOOTERS -->
+    <footer class="bgFotter p-3">
+      <div class="container text-center">
+        <nav class="d-flex justify-content-evenly navFotter py-3 border-bottom">
+          <a href="https://facebook.com" target="_blank"
+            ><i class="bi bi-facebook fs-3"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="bi bi-twitter fs-3"></i
+          ></a>
 
-
+          <a href="https://youtube.com" target="_blank"
+            ><i class="bi bi-youtube fs-3"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank"
+            ><i class="bi bi-instagram fs-3"></i
+          ></a>
+          <a href="https://api.whatsapp.com" target="_blank"
+            ><i class="bi bi-whatsapp fs-3"></i
+          ></a>
+        </nav>
+        <nav class="container d-flex justify-content-between">
+          <div class="text-start">
+            <img src="../imgs/icono.ico" alt="icono" class="iconoFooter" />
+          </div>
+          <div
+            class="d-flex text-white justify-content-center align-items-center"
+          >
+            <a href="../index.html" class="mx-3 text-decoration-none">Inicio</a>
+            <a
+              href="../nosotros/nosotros.html"
+              class="mx-3 text-decoration-none"
+              >Nosotros</a
+            >
+            <a href="#" class="mx-3 text-decoration-none">Contacto</a>
+            <a href="#" class="mx-3 text-decoration-none">Cotizar</a>
+          </div>
+        </nav>
+        <small class="text-white">
+          &copy; T.P. Integrador - Grupo 5 - v1.0.0
+        </small>
+      </div>
+    </footer>
+    <script type="text/javascript" src="cotizacion.js" defer></script>
   </body>
-  <script type="text/javascript" src="cotizacion.js" defer></script>
 </html>

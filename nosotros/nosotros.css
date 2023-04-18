@@ -208,3 +208,22 @@ h3 {
     transform: translate(0);
   }
 }
+
+/* Footer */
+.bgFotter {
+  background-color: #b8b6b6;
+}
+
+.navFotter > a > i {
+  color: var(--dos-color);
+}
+
+.navFotter > a > i:hover {
+  color: var(--uno-color);
+}
+
+.iconoFooter {
+  height: 70px;
+  filter: grayscale(80%);
+  margin-top: auto;
+}

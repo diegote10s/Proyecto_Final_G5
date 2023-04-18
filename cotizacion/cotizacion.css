@@ -71,7 +71,6 @@ body {
 
 /* COTIZACION */
 .cotizacion {
-  
 }
 
 .formularios {
@@ -97,8 +96,8 @@ body {
 
 .cotizacion-container {
   margin: 20px;
-  
-  width: 100vw;  
+
+  width: 100vw;
 }
 
 .select-options {
@@ -107,18 +106,16 @@ body {
 }
 
 #price {
-    display: none;
-    padding: 10px;
-    background-color: #567ad0;
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    width: fit-content;
-  
+  display: none;
+  padding: 10px;
+  background-color: #567ad0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: fit-content;
 }
-
 
 .btn {
   background-color: #364586;
@@ -211,4 +208,23 @@ body {
     -webkit-transform: translate(0);
     transform: translate(0);
   }
+}
+
+/* Footer */
+.bgFotter {
+  background-color: #b8b6b6;
+}
+
+.navFotter > a > i {
+  color: var(--dos-color);
+}
+
+.navFotter > a > i:hover {
+  color: var(--uno-color);
+}
+
+.iconoFooter {
+  height: 70px;
+  filter: grayscale(80%);
+  margin-top: auto;
 }
