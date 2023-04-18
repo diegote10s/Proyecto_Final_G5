@@ -35,10 +35,10 @@
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body>
-    <header class="container-fluid background sticky-top">
+  <body id= "index">
+    <header  class="container-fluid background sticky-top">
       <!-- Redes Inicio -->
-      <div
+      <div 
         class="container-xxl list-group list-group-horizontal redesInicio container"
       >
         <ul
@@ -70,9 +70,9 @@
           </li>
         </ul>
         <ul class="list-group list-group-horizontal list-unstyled ms-auto">
-          <li class="colorIcono">0800-333-4444</li>
+          <a href="tel:+540800333444" target="_blank" class="text-decoration-none"><li class="colorIcono ">0800-333-4444</li></a>
           <li class="ms-5">|</li>
-          <li class="ms-5 colorIcono"><i class="bi bi-geo-alt"></i></li>
+          <a href="index.html#donde-encontrarnos"><li class="ms-5 colorIcono"><i class="bi bi-geo-alt"></i></li></a>
         </ul>
       </div>
       <!-- NAV -->
@@ -211,6 +211,7 @@
         </div>
       </nav>
     </header>
+    <!-- Carrousel -->
     <div
       id="carouselExampleIndicators"
       class="carousel slide border"
@@ -248,18 +249,33 @@
         <div class="carousel-item active">
           <img src="imgs/copia1.jpg" class="d-block w-100" alt="copia1" />
         </div>
-        <div class="carousel-item">
-          <img src="imgs/img_app.png" class="d-block w-100" alt="app" />
+        <div class="carousel-item card tarjeta1">
+          <img src="imgs/img_app.png" class="d-block w-100 card-img" alt="app" />
+          <div class="card-img-overlay tarjeta1texto">
+          <p class="text-white card-title">AseguraCar APP</p>
+          <p class="card-text text-white">Tus seguros a un par de clicks</p>
+          <button disabled>Descarga ahora</button>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="imgs/tienda.png" class="d-block w-100" alt="tienda" />
+        <div class="carousel-item card">
+          <img src="imgs/tienda1.png" class="d-block w-100 card-img" alt="tienda" />
+          <div class="card-img-overlay">
+          <p class="text-white card-title">AseguraCar APP</p>
+          <p class="card-text text-white">Tus seguros a un par de clicks</p>
+          <button disabled>Descarga ahora</button>
+          </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item card">
           <img
             src="imgs/Argentina_Programa.png"
-            class="d-block w-100"
+            class="d-block w-100 card-img"
             alt="Argentina_Programa"
           />
+          <div class="card-img-overlay">
+          <p class="text-white card-title">AseguraCar APP</p>
+          <p class="card-text text-white">Tus seguros a un par de clicks</p>
+          <button disabled>Descarga ahora</button>
+          </div>
         </div>
       </div>
       <button
@@ -282,16 +298,16 @@
       </button>
     </div>
     <!-- Parrafo intermedio -->
-    <div
+    <div 
       class="container-xxl row justify-content-center align-items-center descripcionParrafo"
     >
       <img
         src="imgs/icono.png"
         alt="icono"
         class="img-fluid imagenParrafo col"
-        data-aos="fade-right"
+        data-aos="fade-right" data-aos-duration="1000"
       />
-      <p class="ensayoParrafo justify-content-center col" data-aos="fade-left">
+      <p class="ensayoParrafo justify-content-center col" data-aos="fade-left" data-aos-duration="2000">
         <i>
           "AseguraCar es una excelente opción para proteger su automóvil y su
           seguridad en las carreteras. Con amplia experiencia en el mercado y un
@@ -300,6 +316,8 @@
           plataforma en línea permite a los usuarios cotizar y comprar seguros
           de forma rápida y sencilla".
         </i>
+        <br>
+        <a href="nosotros.html"><button type="button" class="mt-5 btn btn-lg btn-secondary bg-light conocer-mas">conocer mas...</button></a>
       </p>
     </div>
     <!-- Cotizar -->
@@ -311,45 +329,89 @@
         <p class="card-text textParrafo">Obtene tu cotización ahora</p>
         <button
           class="botonComenzar shadow-sm p-3 mb-5 rounded"
-          data-aos="zoom-out"
+          data-aos="zoom-out" data-aos-duration="2000"
         >
           COMENZAR
         </button>
       </div>
     </div>
     <!-- telefono -->
-    <div class="telefono">
-      <h3><i class="bi bi-telephone-fill"></i> 0800-333-4444</h3>
+    <div class="telefono" id="donde-encontrarnos">
+      <a href="tel:+540800333444" target="_blank" class="text-decoration-none aTelefono"><i class="bi bi-telephone-fill"></i>0800-333-4444</a>
     </div>
     <!-- API GOOGLE MAPS -->
-    <h3 class="container-xxl dondeEncontrarnos text-center">Donde Encontrarnos</h3>
+    <h3  class="container-xxl dondeEncontrarnos text-center">
+      Donde Encontrarnos
+    </h3>
     <div id="map" class="container-xxl"></div>
     <script src="script.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAU8E3aiswOxW6SZ6pYVLjKvqaqJJ7gOqA&callback=iniciarMap"></script>
     <!-- Presentacion de la APP -->
-    <div class="card presentacionApp">
-      <img src="imgs/celuAPP.png" class="card-img celuApp" alt="..." />
-      <div class="card-img-overlay textoApp">
-        <h5 class="card-title textoAppTitulo">Nuestra APP</h5>
-        <p class="card-text">
-          <ul class="list-unstyled">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-            <li>Item 5</li>
+    <div class="card presentacionApp text-end" >
+      <img src="imgs/img_app_fondoazul.png" class="card-img celuApp" />
+      <div class="card-img-overlay textoApp container"
+     data-aos="zoom-in-left" data-aos-duration="1000">
+        
+        <p class="card-text text-end">
+          <ul class="list-unstyled text-end itemsApp">
+            <li>Denuncia un siniestro<i class="bi bi-headset"></i></li>
+            <li>Mis seguros<i class="bi bi-card-checklist"></i></li>
+            <li>Cotizadores<i class="bi bi-coin"></i></li>
+            <li>Pagos<i class="bi bi-wallet"></i></li>
+            <li>Mis Documentos<i class="bi bi-folder"></i></li>
           </ul>
         </p>
-        <p class="card-text">Proximamente en todas las plataformas</p>
-        <p class="iconosApp"><i class="bi bi-android2"></i><i class="bi bi-apple"></i></p>
+        <p class="card-text text-end proximamente">Proximamente en todas las plataformas</p>
+        <p class="iconosApp text-end"><i class="bi bi-android2"></i><i class="bi bi-apple"></i></p>
+        </div>
       </div>
     </div>
+    <!-- FOOTERS -->
+   <footer class="bgFotter p-3">
+      <div class="container text-center">
+        <nav class="d-flex justify-content-evenly navFotter py-3 border-bottom">
+          <a href="https://facebook.com" target="_blank"
+            ><i class="bi bi-facebook fs-3"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="bi bi-twitter fs-3"></i
+          ></a>
+          
+          <a href="https://youtube.com" target="_blank"
+            ><i class="bi bi-youtube fs-3"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank"
+            ><i class="bi bi-instagram fs-3"></i
+          ></a>
+          <a
+            href="https://api.whatsapp.com"
+            target="_blank"
+            ><i class="bi bi-whatsapp fs-3"></i
+          ></a>
+        </nav>
+        <nav class="container d-flex justify-content-between">
+          <div class="text-start"><img src="imgs/icono.ico" alt="icono" class="iconoFooter"></div>
+          <div class="d-flex text-white justify-content-center align-items-center">
+            <a href="index.html#index" class="mx-3 text-decoration-none">Inicio</a>
+            <a class="mx-3 text-decoration-none">Nosotros</a>
+            <a class="mx-3 text-decoration-none">Contacto</a>
+            <a class="mx-3 text-decoration-none">Cotizar</a>
+          </div>
+        </nav>
+        <small class="text-white">
+          &copy; T.P. Integrador - Grupo 5 - v1.0.0
+        </small>
+      </div>
+    </footer>
+    
+
     <!-- JS Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
+    
     <!-- Java Script -->
     <script src="main.js"></script>
 
@@ -359,6 +421,6 @@
     <script>
       AOS.init();
     </script>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
   </body>
 </html>

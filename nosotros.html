@@ -32,6 +32,8 @@
 
     <!-- CSS -->
     <link href="nosotros.css" rel="stylesheet" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="container-fluid background sticky-top">
@@ -175,7 +177,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mb-4">
-            <div class="card tarjeta">
+            <div
+              class="card tarjeta"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+            >
               <img
                 class="card-img-top"
                 src="imgs/avatar-ej1.png"
@@ -188,7 +194,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-4">
+          <div
+            class="col-lg-4 mb-4"
+            data-aos="flip-down"
+            data-aos-duration="2000"
+          >
             <div class="card tarjeta">
               <img
                 class="card-img-top rounded-circle"
@@ -204,7 +214,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-4">
+          <div
+            class="col-lg-4 mb-4"
+            data-aos="flip-right"
+            data-aos-duration="2000"
+          >
             <div class="card tarjeta">
               <img
                 class="card-img-top fotoParticipante"
@@ -223,5 +237,18 @@
         </div>
       </div>
     </div>
+
+    <!-- CLIENTES API -->
+    <div class="container-xxl">
+      <h2 class="text-center nuestroEquipo tituloNuestro">
+        <strong>Clientes</strong>
+      </h2>
+    </div>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

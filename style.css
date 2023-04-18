@@ -91,6 +91,30 @@ body {
   color: var(--uno-color);
   font-size: 24px;
 }
+
+.tarjeta1 {
+  text-align: end;
+  font-size: 24px;
+}
+
+.tarjeta1texto {
+  width: 70%;
+}
+
+.conocer-mas {
+  color: var(--uno-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.conocer-mas:hover {
+  background-color: #0069d9; /* Cambiar el color de fondo al pasar el mouse por encima */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Agregar una sombra más grande al pasar el mouse por encima */
+}
 /* Cotización */
 .cotizar {
   background-image: url(imgs/persona_celular.jpg);
@@ -123,13 +147,13 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
-  /* margin: 4px 32px; */
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
 .botonComenzar:hover {
   background-color: black;
   opacity: 0.5;
+  transition: background-color 0.7s ease;
 }
 
 .persona_celular {
@@ -144,6 +168,17 @@ body {
   color: var(--fondo-color);
   padding: 30px;
   text-align: center;
+}
+
+.telefono:hover {
+  color: var(--dos-color);
+  background-color: black;
+  transition: background-color 0.7s ease;
+}
+
+.aTelefono {
+  color: var(--fondo-color);
+  font-size: 24px;
 }
 
 /* API GOOGLE MAPS */
@@ -162,25 +197,64 @@ body {
 /* presentacion App */
 
 .presentacionApp {
-  color: black;
+  color: white;
   text-align: center;
+  border: none;
+  margin-top: 80px;
 }
 
-.celuApp {
-  filter: blur(5px);
+.imagenApp {
+  width: 100%;
+  border: none;
 }
-
 .textoApp {
-  font-size: 35px;
+  margin-top: 100px;
+  font-size: 20px;
+  color: rgb(246, 60, 3);
 }
 
-.textoAppTitulo {
-  font-size: 40px;
-  margin-top: 170px;
+.itemsApp > li {
+  color: wheat;
+  padding: 10px;
+}
+
+.itemsApp > li > i {
+  color: var(--fondo-color);
+  margin-left: 30px;
 }
 
 .iconosApp {
-  font-size: 50px;
+  letter-spacing: 80px;
+  font-size: 80px;
+  color: white;
+  margin-right: 50px;
+  opacity: 0.8;
+}
+
+.proximamente {
+  display: inline-block;
+  background-color: var(--fondo-color);
+  text-align: right !important;
+  font-size: 26px;
+}
+
+/* Footer */
+.bgFotter {
+  background-color: #b8b6b6;
+}
+
+.navFotter > a > i {
+  color: var(--dos-color);
+}
+
+.navFotter > a > i:hover {
+  color: var(--uno-color);
+}
+
+.iconoFooter {
+  height: 70px;
+  filter: grayscale(80%);
+  margin-top: auto;
 }
 
 /* Contacto */
