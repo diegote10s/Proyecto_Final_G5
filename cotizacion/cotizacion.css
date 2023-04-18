@@ -84,8 +84,8 @@ body {
 }
 
 .form-group {
-  width: 30%;
-  margin: 20px 20px 20px 20px;
+  width: 29%;
+  margin: 40px 20px 20px 20px;
 }
 
 .form-control {
@@ -94,8 +94,10 @@ body {
 
 .cotizacion-container {
   margin: 20px;
-
   width: 100vw;
+  height: 300px;
+  display: flex;
+  position: relative;
 }
 
 .select-options {
@@ -103,20 +105,40 @@ body {
   margin-bottom: 40px;
 }
 
+.select-marca {
+  position: absolute;
+  margin-top: 30px;
+}
+
+.select-modelo {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 360px;
+}
+
 #price {
   display: none;
   padding: 10px;
-  background-color: #567ad0;
-  color: #fff;
+  background-color: #E3E6F0;
+  color: #262b62;
   font-size: 24px;
   font-weight: bold;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   width: fit-content;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 180px;
 }
 
 .btn {
+  font-size: 26px;
   background-color: #364586;
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 240px;
+  width: 130px;
+  height: 50px;
 }
 
 .final-price {
