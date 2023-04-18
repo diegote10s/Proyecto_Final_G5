@@ -69,64 +69,60 @@ body {
   color: #567ad0;
 }
 
-/* COTIZACION */
-.cotizacion {
-  
+/* ENSAYO */
+
+.tituloNuestro {
+  background-color: var(--uno-color);
+  color: var(--fondo-color) !important;
+  padding: 8px;
+  margin-top: 50px;
 }
 
-.formularios {
-  background-image: url(../imgs/logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-top: 50px;
-  padding-left: 20px;
+.ensayo > h2,
+h3 {
+  color: var(--uno-color);
 }
 
-.form-group {
-  width: 30%;
-  margin: 20px 20px 20px 20px;
+.ensayo > p,
+.ensayo ul {
+  font-size: 14px;
+  line-height: 40px;
+}
+/* Nuestro Equipo */
+
+.nuestroEquipo {
+  color: var(--uno-color);
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
 
-.form-control {
-  border: 1px solid black;
+/* CARD */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-.cotizacion-container {
-  margin: 20px;
-  
-  width: 100vw;  
+.card-img-top {
+  height: auto;
+  /* object-fit: cover; */
+  border-radius: 10px 10px 0 0;
+  width: 150px;
+  margin: auto;
 }
 
-.select-options {
-  width: 20%;
-  margin-bottom: 40px;
+.card-title {
+  font-size: 1.5rem;
 }
 
-#price {
-    display: none;
-    padding: 10px;
-    background-color: #567ad0;
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    width: fit-content;
-  
+.card-text {
+  font-size: 1.2rem;
+  color: #555;
 }
 
-
-.btn {
-  background-color: #364586;
-}
-
-.final-price {
-  display: flex;
-  flex-direction: row;
+.tarjeta {
+  width: 250px;
+  margin: auto;
 }
 
 /* Contacto */

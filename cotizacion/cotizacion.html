@@ -94,11 +94,10 @@
                   href="#"
                   id="contacto-link"
                   target="_self"
-                  >Contacto</a
-                >
+                  >Contacto</a>
                 <div id="contacto-form" style="display: none">
                   <form
-                    action="submit_formulario.php"
+                    action=""
                     method="POST"
                     onsubmit="return validarFormulario()"
                   >
@@ -109,6 +108,7 @@
                         class="form-control"
                         id="nombre"
                         name="nombre"
+                        placeholder="Ingrese Nombre"
                         required
                       />
                     </div>
@@ -119,6 +119,7 @@
                         class="form-control"
                         id="telefono"
                         name="telefono"
+                        placeholder="Ingrese Teléfono"
                         required
                       />
                     </div>
@@ -129,6 +130,7 @@
                         class="form-control"
                         id="email"
                         name="email"
+                        placeholder="Ingrese Email"
                         required
                       />
                     </div>
@@ -138,50 +140,15 @@
                         class="form-control"
                         id="mensaje"
                         name="mensaje"
+                        placeholder="Dejenos su consulta"
                         required
                       ></textarea>
                     </div>
                     <button class="btn btn-primary">Enviar</button>
                   </form>
                 </div>
+              <script src="formulario-contacto.js"></script>
               </li>
-              <script>
-                function toggleFormularioContacto() {
-                  var formulario = document.getElementById("contacto-form");
-                  var botonContacto = document.getElementById("contacto-link");
-
-                  if (formulario.style.display === "none") {
-                    formulario.style.display = "block";
-                    botonContacto.textContent = "Contacto";
-                    botonContacto.classList.remove("btn-primary");
-                    botonContacto.classList.add("btn-danger");
-                  } else {
-                    formulario.style.display = "none";
-                    botonContacto.textContent = "Contacto";
-                    botonContacto.classList.add("btn-primary");
-                    botonContacto.classList.remove("btn-danger");
-                  }
-                }
-
-                function validarFormulario() {
-                  var nombre = document.getElementById("nombre").value;
-                  var email = document.getElementById("email").value;
-                  var mensaje = document.getElementById("mensaje").value;
-
-                  if (nombre == "" || email == "" || mensaje == "") {
-                    alert("Por favor, complete todos los campos obligatorios.");
-                    return false;
-                  }
-
-                  return true;
-                }
-
-                document
-                  .getElementById("contacto-link")
-                  .addEventListener("click", function () {
-                    toggleFormularioContacto();
-                  });
-              </script>
               <li class="nav-item ms-5">
                 <a class="nav-link colorEnlace" href="cotizacion.html"
                   >Cotizar</a
